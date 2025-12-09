@@ -94,3 +94,32 @@ tmp_pt : 메인라인의 무게중심 좌표가 저장
 * Errorobject() 함수
 #### error = (로봇 중앙 x좌표) - (메인라인 중앙 x좌표)
 (-)인 경우 : 라인이 오른쪽에 , (+)인 경우 : 라인이 왼쪽에 있음
+
+
+## sub.cpp
+### 전처리
+<pre><code>{cv::Rect roi_rect(0, 270, 640, 90);
+    cv::Mat roi = frame(roi_rect);
+
+    cv::Mat gray;
+    cv::cvtColor(roi, gray, cv::COLOR_BGR2GRAY);
+
+    //결과 = 입력 + (목표평균 - 현재평균)
+    cv::Scalar avg_pixel = cv::mean(gray);
+    //목표 밝기 설정
+    double target_mean = 100.0;
+
+    gray = gray+(target_mean-avg_pixel[0]);
+
+    cv::Mat binary;
+    cv::threshold(gray, binary, 150, 255, cv::THRESH_BINARY);}</code></pre>
+
+### 영상 1장 처리하는데 걸리는 시간
+
+pre><code>#include <chrono> //선언 
+ auto start_time = steady_clock::now(); //시작 시간 저장
+ //측정할 코드
+ auto end_time = steady_clock::now(); // 종료시간 저장
+ float totalTime = duration<float, std::milli>(end_time - start_time).count(); // 밀리초 단위/시간차 저장</code></pre>
+
+    
