@@ -98,7 +98,7 @@ tmp_pt : 메인라인의 무게중심 좌표가 저장
 
 ## sub.cpp
 ### 전처리
-<pre><code>{cv::Rect roi_rect(0, 270, 640, 90);
+<pre><code>cv::Rect roi_rect(0, 270, 640, 90);
     cv::Mat roi = frame(roi_rect);
 
     cv::Mat gray;
@@ -112,11 +112,11 @@ tmp_pt : 메인라인의 무게중심 좌표가 저장
     gray = gray+(target_mean-avg_pixel[0]);
 
     cv::Mat binary;
-    cv::threshold(gray, binary, 150, 255, cv::THRESH_BINARY);}</code></pre>
+    cv::threshold(gray, binary, 150, 255, cv::THRESH_BINARY);</code></pre>
 
 ### 영상 1장 처리하는데 걸리는 시간
 
-pre><code>#include <chrono> //선언 
+<pre><code>#include <chrono> //선언 
  auto start_time = steady_clock::now(); //시작 시간 저장
  //측정할 코드
  auto end_time = steady_clock::now(); // 종료시간 저장
