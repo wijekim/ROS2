@@ -116,7 +116,7 @@ tmp_pt : 메인라인의 무게중심 좌표가 저장
 
 ### 영상 1장 처리하는데 걸리는 시간
 
-<pre><code>#include <chrono> //선언 
+<pre><code>
  auto start_time = steady_clock::now(); //시작 시간 저장
  //측정할 코드
  auto end_time = steady_clock::now(); // 종료시간 저장
