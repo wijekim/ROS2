@@ -7,9 +7,7 @@ https://youtu.be/B8ycoOGWdFM?si=pRl8ejabE-qS8xeA
 https://youtu.be/0hAaTeLVuoU?si=jX0tq5Nj7QiMV_2t
 
 ### Object.cpp
-'''
-//이진화된 이미지에서 라인 후보들을 찾고, 가장 유력한 라인을 선택
-void findObjects(cv::Mat& binary, cv::Point& tmp_pt, cv::Mat& stats, cv::Mat& centroids) {
+'''void findObjects(cv::Mat& binary, cv::Point& tmp_pt, cv::Mat& stats, cv::Mat& centroids) {
 
     cv::Mat labels;
     //stats: 각 x,y,w,h와 면적(area) 정보가 담김
@@ -51,6 +49,4 @@ void findObjects(cv::Mat& binary, cv::Point& tmp_pt, cv::Mat& stats, cv::Mat& ce
         // 못 찾았으면 마지막 위치에 점 찍기 /이전 위치(tmp_pt)에 빨간 점만 찍음
         cv::circle(binary, cv::Point(tmp_pt.x, tmp_pt.y), 5, cv::Scalar(0, 0, 255), -1);
     }
-}
-
-'''
+}'''
