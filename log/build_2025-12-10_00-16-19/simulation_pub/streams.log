@@ -1,0 +1,8 @@
+[0.006s] Invoking command in '/home/linux/ros2_ws/build/simulation_pub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/linux/ros2_ws/build/simulation_pub -- -j24 -l24
+[0.032s] [35m[1mScanning dependencies of target sub[0m
+[0.043s] [ 50%] Built target pub
+[0.045s] [ 75%] [32mBuilding CXX object CMakeFiles/sub.dir/src/sub.cpp.o[0m
+[1.548s] make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/sub.cpp.o] Interrupt
+[1.548s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/sub.dir/all] Interrupt
+[1.548s] make: *** [Makefile:141: all] Interrupt
+[1.557s] Invoked command in '/home/linux/ros2_ws/build/simulation_pub' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/linux/ros2_ws/build/simulation_pub -- -j24 -l24

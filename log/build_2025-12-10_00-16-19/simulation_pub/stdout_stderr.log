@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target sub[0m
+[ 50%] Built target pub
+[ 75%] [32mBuilding CXX object CMakeFiles/sub.dir/src/sub.cpp.o[0m
+make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/sub.cpp.o] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/sub.dir/all] Interrupt
+make: *** [Makefile:141: all] Interrupt

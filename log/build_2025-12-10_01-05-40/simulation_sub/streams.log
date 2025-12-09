@@ -1,0 +1,10 @@
+[0.010s] Invoking command in '/home/linux/ros2_ws/build/simulation_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/linux/ros2_ws/build/simulation_sub -- -j24 -l24
+[0.087s] [ 50%] [32m[1mLinking CXX executable sub[0m
+[0.574s] /usr/bin/ld: CMakeFiles/sub.dir/src/sub.cpp.o: in function `mysub_callback(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)':
+[0.574s] sub.cpp:(.text+0x4bc): undefined reference to `findObjects(cv::Mat&, cv::Point_<int>&, cv::Mat&, cv::Mat&)'
+[0.574s] /usr/bin/ld: sub.cpp:(.text+0x4e3): undefined reference to `drawObjects(cv::Mat&, cv::Mat&, cv::Point_<int>&, cv::Mat&)'
+[0.574s] collect2: error: ld returned 1 exit status
+[0.575s] make[2]: *** [CMakeFiles/sub.dir/build.make:189: sub] Error 1
+[0.575s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/sub.dir/all] Error 2
+[0.576s] make: *** [Makefile:141: all] Error 2
+[0.577s] Invoked command in '/home/linux/ros2_ws/build/simulation_sub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/linux/ros2_ws/build/simulation_sub -- -j24 -l24

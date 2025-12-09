@@ -1,0 +1,56 @@
+[0.000000] (-) TimerEvent: {}
+[0.000400] (-) JobUnselected: {'identifier': 'camera_ros2'}
+[0.000695] (-) JobUnselected: {'identifier': 'simulation_pub'}
+[0.000734] (simulation_sub) JobQueued: {'identifier': 'simulation_sub', 'dependencies': OrderedDict()}
+[0.000746] (simulation_sub) JobStarted: {'identifier': 'simulation_sub'}
+[0.007810] (simulation_sub) JobProgress: {'identifier': 'simulation_sub', 'progress': 'cmake'}
+[0.008478] (simulation_sub) JobProgress: {'identifier': 'simulation_sub', 'progress': 'build'}
+[0.009063] (simulation_sub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/linux/ros2_ws/build/simulation_sub', '--', '-j24', '-l24'], 'cwd': '/home/linux/ros2_ws/build/simulation_sub', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'linux'), ('ROS_NAMESPACE', 'robot1'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{4dd1e689-b517-5f39-947d-78e8a8bdf958}'), ('HOME', '/home/linux'), ('OLDPWD', '/home/linux'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('_colcon_cd_root', '/home/linux/ros2_ws'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/linux/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'linux'), ('NAME', 'Desktop'), ('WSL_INTEROP', '/run/WSL/35189_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/linux/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/TensorRT-8.6.1.6/lib:/mnt/c/TensorRT-8.6.1.6/bin:/mnt/c/Users/KIMCHANWOO/anaconda3/envs/tensroRT:/mnt/c/Users/KIMCHANWOO/anaconda3/envs/tensroRT/Library/mingw-w64/bin:/mnt/c/Users/KIMCHANWOO/anaconda3/envs/tensroRT/Library/usr/bin:/mnt/c/Users/KIMCHANWOO/anaconda3/envs/tensroRT/Library/bin:/mnt/c/Users/KIMCHANWOO/anaconda3/envs/tensroRT/Scripts:/mnt/c/Users/KIMCHANWOO/anaconda3/envs/tensroRT/bin:/mnt/c/Users/KIMCHANWOO/anaconda3/condabin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/Program Files/NVIDIA/CUDNN/v9.4/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.8/libnvvp:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/gstreamer/1.0/msvc_x86_64/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.1:/mnt/d/php:/mnt/c/ffmpeg:/mnt/c/Program Files (x86)/sox-14-4-2:/mnt/c/Users/KIMCHANWOO/AppData/Local/Programs/MiKTeX/miktex/bin/x64:/mnt/c/Users/KIMCHANWOO/anaconda3:/mnt/c/Users/KIMCHANWOO/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/KIMCHANWOO/anaconda3/Library/usr/bin:/mnt/c/Users/KIMCHANWOO/anaconda3/Library/bin:/mnt/c/Users/KIMCHANWOO/anaconda3/Scripts:/mnt/c/Users/KIMCHANWOO/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/KIMCHANWOO/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/KIMCHANWOO/AppData/Local/Programs/MiKTeX/miktex/bin/x64:/mnt/c/TensorRT-8.6.1.6/bin:/mnt/c/TensorRT-8.6.1.6/bin:/mnt/c/TensorRT-8.6.1.6/bin:/mnt/c/TensorRT-8.6.1.6/lib:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Users/KIMCHANWOO/anaconda3:/mnt/c/Users/KIMCHANWOO/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/KIMCHANWOO/anaconda3/Library/usr/bin:/mnt/c/Users/KIMCHANWOO/anaconda3/Library/bin:/mnt/c/Users/KIMCHANWOO/anaconda3/Scripts:/mnt/c/Users/KIMCHANWOO/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/KIMCHANWOO/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/KIMCHANWOO/AppData/Local/Programs/MiKTeX/miktex/bin/x64/:/snap/bin'), ('WT_SESSION', '39c72702-3fd9-43d5-a165-64bf3d73aaee'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/linux/ros2_ws/install/simulation_sub:/home/linux/ros2_ws/install/simulation_pub:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/linux/ros2_ws/build/simulation_sub'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/linux/ros2_ws/install/simulation_sub:/home/linux/ros2_ws/install/simulation_pub:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.064309] (simulation_sub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sub\x1b[0m\n'}
+[0.089010] (simulation_sub) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/sub.dir/src/sub.cpp.o\x1b[0m\n'}
+[0.099849] (-) TimerEvent: {}
+[0.200132] (-) TimerEvent: {}
+[0.300413] (-) TimerEvent: {}
+[0.400744] (-) TimerEvent: {}
+[0.501035] (-) TimerEvent: {}
+[0.601318] (-) TimerEvent: {}
+[0.701627] (-) TimerEvent: {}
+[0.801900] (-) TimerEvent: {}
+[0.902256] (-) TimerEvent: {}
+[1.002600] (-) TimerEvent: {}
+[1.102904] (-) TimerEvent: {}
+[1.203233] (-) TimerEvent: {}
+[1.303531] (-) TimerEvent: {}
+[1.403857] (-) TimerEvent: {}
+[1.466156] (simulation_sub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/linux/ros2_ws/src/simulation_sub/src/sub.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid mysub_callback(rclcpp::Node::SharedPtr, sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.466326] (simulation_sub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/linux/ros2_ws/src/simulation_sub/src/sub.cpp:54:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kreference to \xe2\x80\x98\x1b[01m\x1b[KError\x1b[m\x1b[K\xe2\x80\x99 is ambiguous\n'}
+[1.466362] (simulation_sub) StderrLine: {'line': b'   54 |     error = \x1b[01;31m\x1b[KError\x1b[m\x1b[K(thresh, tmp_pt);\n'}
+[1.466389] (simulation_sub) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.466414] (simulation_sub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:54\x1b[m\x1b[K,\n'}
+[1.466439] (simulation_sub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[1.466464] (simulation_sub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/linux/ros2_ws/src/simulation_sub/src/object.hpp:5\x1b[m\x1b[K,\n'}
+[1.466487] (simulation_sub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/linux/ros2_ws/src/simulation_sub/src/sub.cpp:1\x1b[m\x1b[K:\n'}
+[1.466509] (simulation_sub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/base.hpp:66:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidates are: \xe2\x80\x98\x1b[01m\x1b[Knamespace cv::Error { }\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.466531] (simulation_sub) StderrLine: {'line': b'   66 | namespace \x1b[01;36m\x1b[KError\x1b[m\x1b[K {\n'}
+[1.466554] (simulation_sub) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.466575] (simulation_sub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/linux/ros2_ws/src/simulation_sub/src/sub.cpp:1\x1b[m\x1b[K:\n'}
+[1.466596] (simulation_sub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/linux/ros2_ws/src/simulation_sub/src/object.hpp:13:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K                \xe2\x80\x98\x1b[01m\x1b[Kint Error(cv::Mat&, cv::Point&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.466621] (simulation_sub) StderrLine: {'line': b'   13 | int \x1b[01;36m\x1b[KError\x1b[m\x1b[K(Mat& thresh, Point& tmp_pt);\n'}
+[1.466642] (simulation_sub) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.504012] (-) TimerEvent: {}
+[1.604328] (-) TimerEvent: {}
+[1.704725] (-) TimerEvent: {}
+[1.805188] (-) TimerEvent: {}
+[1.905472] (-) TimerEvent: {}
+[2.005788] (-) TimerEvent: {}
+[2.106099] (-) TimerEvent: {}
+[2.206447] (-) TimerEvent: {}
+[2.306741] (-) TimerEvent: {}
+[2.407062] (-) TimerEvent: {}
+[2.507401] (-) TimerEvent: {}
+[2.525423] (simulation_sub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/sub.cpp.o] Error 1\n'}
+[2.525738] (simulation_sub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/sub.dir/all] Error 2\n'}
+[2.525830] (simulation_sub) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.527493] (simulation_sub) CommandEnded: {'returncode': 2}
+[2.539831] (simulation_sub) JobEnded: {'identifier': 'simulation_sub', 'rc': 2}
+[2.550251] (-) EventReactorShutdown: {}

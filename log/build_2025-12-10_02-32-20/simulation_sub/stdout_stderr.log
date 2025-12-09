@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target sub[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/sub.dir/src/object.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/sub.dir/src/sub.cpp.o[0m
+[01m[K/home/linux/ros2_ws/src/simulation_sub/src/sub.cpp:[m[K In function ‘[01m[Kvoid mysub_callback(rclcpp::Node::SharedPtr, sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/linux/ros2_ws/src/simulation_sub/src/sub.cpp:54:13:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[KError[m[K’ is ambiguous
+   54 |     error = [01;31m[KError[m[K(thresh, tmp_pt);
+      |             [01;31m[K^~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:54[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/linux/ros2_ws/src/simulation_sub/src/object.hpp:5[m[K,
+                 from [01m[K/home/linux/ros2_ws/src/simulation_sub/src/sub.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/base.hpp:66:11:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Knamespace cv::Error { }[m[K’
+   66 | namespace [01;36m[KError[m[K {
+      |           [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/linux/ros2_ws/src/simulation_sub/src/sub.cpp:1[m[K:
+[01m[K/home/linux/ros2_ws/src/simulation_sub/src/object.hpp:13:5:[m[K [01;36m[Knote: [m[K                ‘[01m[Kint Error(cv::Mat&, cv::Point&)[m[K’
+   13 | int [01;36m[KError[m[K(Mat& thresh, Point& tmp_pt);
+      |     [01;36m[K^~~~~[m[K
+[01m[K/home/linux/ros2_ws/src/simulation_sub/src/sub.cpp:54:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kthresh[m[K’ was not declared in this scope
+   54 |     error = Error([01;31m[Kthresh[m[K, tmp_pt);
+      |                   [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/sub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/sub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

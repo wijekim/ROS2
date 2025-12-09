@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target sub[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/sub.dir/src/sub.cpp.o[0m
+[ 75%] Built target pub
+[100%] [32m[1mLinking CXX executable sub[0m
+[100%] Built target sub
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/lib/simulation_pub/pub
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/lib/simulation_pub/sub
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/ament_index/resource_index/package_run_dependencies/simulation_pub
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/ament_index/resource_index/parent_prefix_path/simulation_pub
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/simulation_pub/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/simulation_pub/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/simulation_pub/environment/path.sh
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/simulation_pub/environment/path.dsv
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/simulation_pub/local_setup.bash
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/simulation_pub/local_setup.sh
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/simulation_pub/local_setup.zsh
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/simulation_pub/local_setup.dsv
+-- Symlinking: /home/linux/ros2_ws/install/simulation_pub/share/simulation_pub/package.dsv
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/ament_index/resource_index/packages/simulation_pub
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/simulation_pub/cmake/simulation_pubConfig.cmake
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/simulation_pub/cmake/simulation_pubConfig-version.cmake
+-- Up-to-date symlink: /home/linux/ros2_ws/install/simulation_pub/share/simulation_pub/package.xml
