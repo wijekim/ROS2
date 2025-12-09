@@ -7,6 +7,7 @@ https://youtu.be/B8ycoOGWdFM?si=pRl8ejabE-qS8xeA
 https://youtu.be/0hAaTeLVuoU?si=jX0tq5Nj7QiMV_2t
 
 ### Object.cpp
+"""
 void findObjects(cv::Mat& binary, cv::Point& tmp_pt, cv::Mat& stats, cv::Mat& centroids) {
 
     cv::Mat labels;
@@ -50,3 +51,4 @@ void findObjects(cv::Mat& binary, cv::Point& tmp_pt, cv::Mat& stats, cv::Mat& ce
         cv::circle(binary, cv::Point(tmp_pt.x, tmp_pt.y), 5, cv::Scalar(0, 0, 255), -1);
     }
 }
+"""
