@@ -58,4 +58,39 @@ void findObjects(cv::Mat& binary, cv::Point& tmp_pt, cv::Mat& stats, cv::Mat& ce
 
 현재 검출된 라인들과 이전 프레임에서의 메인이되는 라인의 무게 중심의 차이를 이용
 거리는 150 이하인 경우로 설정하였는데 100일 경우 회전시에 급격한 변화가 생기면서 라인을 놓치는 경우가 생기고 150인 경우에 다른 라인을 메인으로 잡아버리는 경우가 생기기 때문에 거리는 150 미만인 경우로 잡음 
-  
+
+
+
+<pre><code>{void drawObjects(cv::Mat& stats, cv::Mat& centroids, cv::Point& tmp_pt, cv::Mat& binary) {
+    for (int i = 1; i < stats.rows; i++) {
+        int area = stats.at<int>(i, 4);
+        if (area > 100) {
+            int x = cvRound(centroids.at<double>(i, 0));
+            int y = cvRound(centroids.at<double>(i, 1));
+
+            // 현재 추적 중인 객체는 빨간색, 나머지는 파란색
+            if (x == tmp_pt.x && y == tmp_pt.y) { 
+                cv::rectangle(binary, cv::Rect(stats.at<int>(i, 0), stats.at<int>(i, 1), stats.at<int>(i, 2), stats.at<int>(i, 3)), cv::Scalar(0, 0, 255));
+                cv::circle(binary, cv::Point(x, y), 5, cv::Scalar(0, 0, 255), -1);
+            }
+            else {
+                cv::rectangle(binary, cv::Rect(stats.at<int>(i, 0), stats.at<int>(i, 1), stats.at<int>(i, 2), stats.at<int>(i, 3)), cv::Scalar(255, 0, 0));
+                cv::circle(binary, cv::Point(x, y), 5, cv::Scalar(255, 0, 0), -1);
+            }
+        }
+    }
+}}</code></pre>  
+
+* drawObjects()
+기준점을 표시해주는 함수
+tmp_pt : 메인라인의 무게중심 좌표가 저장
+메인라인에는 빨간색 바운딩박스와 점을 찍고, 나머지 라인에는 파란색 바운딩박스와 점을 찍음.
+
+
+<pre><code>{int Errorobject(cv::Mat& binary, cv::Point& tmp_pt) {
+    return ((binary.cols / 2) - tmp_pt.x);
+}}</code></pre>
+
+* Errorobject() 함수
+#### error = (로봇 중앙 x좌표) - (메인라인 중앙 x좌표)
+(-)인 경우 : 라인이 오른쪽에 , (+)인 경우 : 라인이 왼쪽에 있음
