@@ -7,8 +7,6 @@ https://youtu.be/B8ycoOGWdFM?si=pRl8ejabE-qS8xeA
 https://youtu.be/0hAaTeLVuoU?si=jX0tq5Nj7QiMV_2t
 
 ### Object.cpp
-'''cpp
-//이진화된 이미지에서 라인 후보들을 찾고, 가장 유력한 라인을 선택
 void findObjects(cv::Mat& binary, cv::Point& tmp_pt, cv::Mat& stats, cv::Mat& centroids) {
 
     cv::Mat labels;
