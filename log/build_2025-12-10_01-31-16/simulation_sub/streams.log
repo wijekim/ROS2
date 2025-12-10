@@ -1,9 +1,0 @@
-[0.008s] Invoking command in '/home/linux/ros2_ws/build/simulation_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/linux/ros2_ws/build/simulation_sub -- -j24 -l24
-[0.022s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
-[0.035s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
-[0.116s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
-[0.120s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
-[0.206s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
-[0.208s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
-[1.559s] make: *** [Makefile:296: cmake_check_build_system] Interrupt
-[1.561s] Invoked command in '/home/linux/ros2_ws/build/simulation_sub' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/linux/ros2_ws/build/simulation_sub -- -j24 -l24

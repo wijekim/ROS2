@@ -1,7 +1,0 @@
-/usr/bin/ld: CMakeFiles/sub.dir/src/sub.cpp.o: in function `mysub_callback(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)':
-sub.cpp:(.text+0x4bc): undefined reference to `findObjects(cv::Mat&, cv::Point_<int>&, cv::Mat&, cv::Mat&)'
-/usr/bin/ld: sub.cpp:(.text+0x4e3): undefined reference to `drawObjects(cv::Mat&, cv::Mat&, cv::Point_<int>&, cv::Mat&)'
-collect2: error: ld returned 1 exit status
-make[2]: *** [CMakeFiles/sub.dir/build.make:189: sub] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/sub.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

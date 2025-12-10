@@ -1,4 +1,0 @@
-Invoking command in '/home/linux/ros2_ws/build/simulation_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/linux/ros2_ws/build/simulation_sub -- -j24 -l24
-Invoked command in '/home/linux/ros2_ws/build/simulation_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/linux/ros2_ws/build/simulation_sub -- -j24 -l24
-Invoking command in '/home/linux/ros2_ws/build/simulation_sub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/linux/ros2_ws/build/simulation_sub
-Invoked command in '/home/linux/ros2_ws/build/simulation_sub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/linux/ros2_ws/build/simulation_sub
