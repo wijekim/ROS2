@@ -1,1 +1,0 @@
-/home/linux/ros2_ws/build/simulation_pub/ament_cmake_core/simulation_pubConfig-version.cmake
